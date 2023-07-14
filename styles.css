@@ -43,6 +43,8 @@ body {
   width: 200px;
 }
 
-.grid-btn {
-  width: 600px;
+.grid-btn-1,
+.grid-btn-2,
+.grid-btn-3 {
+  width: 200px;
 }
