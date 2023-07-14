@@ -5,6 +5,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+button {
+  width: 200px;
+}
+
 .button-container {
   width: 600px;
   align-self: center;
@@ -22,8 +27,8 @@ body {
   border: 5px solid black;
   border-radius: 4px;
   grid-template-columns: repeat(20, auto);
-  /* grid-gap: 1px; */
-  /* box-shadow: 0 0 30px #392270; */
+  grid-gap: 1px;
+  box-shadow: 0 0 30px #392270;
 }
 
 .grid {
@@ -31,11 +36,7 @@ body {
   background-color: white;
 }
 
-.black-btn {
-  width: 200px;
-}
-
-.blue-btn {
+/* .color-btn {
   width: 200px;
 }
 
@@ -43,8 +44,6 @@ body {
   width: 200px;
 }
 
-.grid-btn-1,
-.grid-btn-2,
-.grid-btn-3 {
+.grid-btn {
   width: 200px;
-}
+} */
