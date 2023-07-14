@@ -38,7 +38,11 @@ const changeGrid = function () {
   console.log((gridValue, columns));
   createGrids(gridValue, columns);
 };
-createGrids();
+
+const resetGrid = function () {
+  container.innerHTML = ``;
+  createGrids(gridValue, columns);
+};
 
 container.addEventListener("mouseover", function (e) {
   e.target.style.backgroundColor = color;
@@ -46,7 +50,9 @@ container.addEventListener("mouseover", function (e) {
 
 blackBtn.addEventListener("click", colorPicker);
 blueBtn.addEventListener("click", colorPicker);
-resetBtn.addEventListener("click", changeGrid);
+resetBtn.addEventListener("click", resetGrid);
 gridBtn1.addEventListener("click", changeGrid);
 gridBtn2.addEventListener("click", changeGrid);
 gridBtn3.addEventListener("click", changeGrid);
+
+createGrids();
